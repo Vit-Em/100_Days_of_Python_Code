@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2025-02-15T12:14:57.340983770"/>
+	<meta name="Info 1" content=""/>
+	<meta name="Info 2" content=""/>
+	<meta name="Info 3" content=""/>
+	<meta name="Info 4" content=""/>
+	<meta name="sdfootnote" content=";;;;P">
+	<meta name="sdendnote" content="ARABIC">
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		p { margin-bottom: 0.21cm; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Albany", sans-serif; font-size: 16pt; font-weight: bold }
+		h1.cjk { font-family: "MS Mincho"; font-size: 16pt; font-weight: bold }
+		h1.ctl { font-family: "Tahoma"; font-size: 16pt; font-weight: bold }
+		h3 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Albany", sans-serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "MS Mincho"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Tahoma"; font-size: 14pt; font-weight: bold }
+		a:link { color: #000080; text-decoration: underline }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western" align="center">
+Flashcards-Hilfe</h1>
+<h3 class="western">Einführung</h3>
+<p>Willkommen zur Flashcard-Anwendung! Diese Anwendung hilft dir,
+deutsche Wörter und ihre russischen Übersetzungen zu lernen. Die
+App verwendet eine CSV-Datei mit häufigen deutschen Wörtern und
+deren Übersetzungen.</p>
+<h3 class="western">Benutzung</h3>
+<p><b>1. Starten der App:</b> Öffne die App, um mit dem Lernen zu
+beginnen:</p>
+<p>	In Console:		<span style="font-variant: normal"><font face="fkGroteskNeue, fkGroteskNeue Fallback, ui-sans-serif, system-ui, apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">python
+Flash_Cards_main.py<br/>
+	</span></span></span></font></font></span><span style="font-variant: normal"><font face="fkGroteskNeue, fkGroteskNeue Fallback, ui-sans-serif, system-ui, apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Im
+Windos Explorer:	Flash_Cards_main.exe</span></span></span></font></font></span></p>
+<p><b>2<img src="../images/FlashcardsHilfe_front_view.png" name="Bild1" align="left" width="554" height="469" border="0"/>
+.
+Kartenanzeige: </b>Die App zeigt dir eine Karte mit einem deutschen
+Wort und seiner Wortart auf der Vorderseite und (nach dem Umdrehen)
+einem russischen Wort und seiner Wortart auf der Rückseite.</p>
+<ul>
+	<li><p>❌<b>-Knopf (Falsch):</b> Wenn du das Wort nicht kennst,
+	klicke auf diesen Knopf. Die Karte wird umgedreht und zeigt dir die
+	russische Übersetzung. Der Zähler neben dem Knopf erhöht sich.</p></li>
+	<li><p>✅<b>-Knopf (Richtig):</b> Wenn du das Wort kennst, klicke
+	auf diesen Knopf. Die App zeigt dir das nächste Wort. Der Zähler
+	neben dem Knopf erhöht sich.</p></li>
+	<li><p><b>Timer:</b> Der Timer zwischen den Knöpfen zeigt dir die
+	verstrichene Zeit an, die du zum Überlegen benötigt hast.</p></li>
+	<li><p><b>Zähler:</b> Die zwei Zähler neben den Knöpfen zeigen
+	dir, wie oft du auf den jeweiligen Knopf geklickt hast (falsch oder
+	richtig).</p></li>
+</ul>
+<p><b>3. </b><b>Übungsstatistik:</b> Die App speichert deine
+Lernstatistik in einer CSV-Datei namens `achievements.csv`. Diese
+Datei enthält Informationen über Datum und Uhrzeit der Übung, die
+Übungsdauer,die Anzahl der richtigen bzw. falschen Antworten und
+deien Denkdauer bevor du ✅-Knopf (Richtig) drückts.</p>
+<p><b>4. Hilfe</b> Klicke auf den &quot;Hilfe / Справка&quot;-Link,
+um diese Hilfedatei zu öffnen.</p>
+<h3 class="western">Programmmerkmale</h3>
+<p>- Gewichtete Auswahl: Die App verwendet eine gewichtete Auswahl,
+um häufigere Wörter öfter anzuzeigen. Die Häufigkeit von Worten
+in lebendigen deutsche Sprache wurde vom Matthias Buchmeier in seinem
+“<a href="https://en.wiktionary.org/wiki/User:Matthias_Buchmeier/German_frequency_list-1-5000">German
+frequency list-1-5000</a>” im 25.06.2009 berechnet und im
+11.02.2025 vom Vitali Emelianov mit den Wortarten und Übersetzung
+ergänzt.</p>
+<p>- Plattformübergreifend: Diese App ist für Windows, macOS und
+Linux konzipiert und sieht nur Installtion von Python 3.X auf Ihrem
+PC vor.</p>
+<p>- Erweiterbarkeit: Diese App kann leicht erweitert werden, um
+weitere Funktionen oder Sprachen hinzuzufügen. Es ist zurzeit nur
+geplant und wird nach der Feedbackanalyse ausgeführt.</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<h1 class="western" align="center" style="page-break-before: always">Flashcards-Справка</h1>
+<h3 class="western">Введение</h3>
+<p>Добро пожаловать в приложение
+Flashcards! Это приложение поможет вам изучать
+немецкие слова и их русские переводы.
+Приложение использует CSV-файл с часто
+используемыми немецкими словами и их
+переводами.</p>
+<h3 class="western">Использование</h3>
+<p><b>1. Запуск приложения:</b> Откройте
+приложение, чтобы начать обучение.</p>
+<p>	В терминале:	<span style="font-variant: normal"><font face="fkGroteskNeue, fkGroteskNeue Fallback, ui-sans-serif, system-ui, apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">python
+Flash_Cards_main.py<br/>
+	</span></span></span></font></font></span><span style="font-variant: normal"><font face="fkGroteskNeue, fkGroteskNeue Fallback, ui-sans-serif, system-ui, apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji"><font size="3" style="font-size: 12pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">В
+Windos Explorer:	Flash_Cards_main.exe</span></span></span></font></font></span></p>
+<p><b>2<img src="../images/FlashcardsHilfe_front_view.png" name="Bild2" align="left" width="554" height="469" border="0"/>
+.
+Отображение карточек:</b> Приложение
+показывает вам карточку с немецким
+словом и его частью речи на лицевой
+стороне и русским словом с его частью
+речи на обратной стороне.</p>
+<ul>
+	<li><p>❌<b>-Кнопка (Не знаю):</b> Если вы не
+	знаете слово, нажмите на эту кнопку.
+	Карточка перевернется и покажет вам
+	русский перевод.</p></li>
+	<li><p>✅<b>-Кнопка (Знаю):</b> Если вы знаете
+	слово, нажмите на эту кнопку. Приложение
+	покажет вам следующее слово.</p></li>
+	<li><p><b>Таймер:</b> Таймер между кнопками
+	показывает прошедшее время, которое
+	вы потратили на размышление.</p></li>
+	<li><p><b>Счетчики:</b> Два счетчика рядом с
+	кнопками показывают, сколько раз вы
+	нажимали на соответствующую кнопку
+	(не знаю или знаю).</p></li>
+</ul>
+<p><b>3. Статистика обучения:</b>
+Приложение сохраняет вашу статистику
+обучения в CSV-файле под названием
+`achievements.csv`. Этот файл содержит информацию
+о дате и времени упражнения, продолжительности
+упражнения и количестве правильных и
+неправильных ответов.</p>
+<p><b>4. Помощь:</b> Нажмите на ссылку &quot;Hilfe
+/ Справка&quot;, чтобы открыть этот файл
+справки.</p>
+<h3 class="western">Особенности программы</h3>
+<p><b>Взвешенный выбор:</b> Приложение
+использует взвешенный выбор, чтобы чаще
+показывать более часто используемые
+немецкие слова. Частота слов в живом
+немецком языке была рассчитана Маттиасом
+Бухмайером в его &quot;<a href="https://en.wiktionary.org/wiki/User:Matthias_Buchmeier/German_frequency_list-1-5000">German
+frequency list-1-5000</a>&quot; 25.06.2009 и дополнена
+частями речи и переводами Виталием
+Емельяновым 11.02.2025.</p>
+<p><b>Кроссплатформенность:</b> Это приложение
+предназначено для Windows, macOS и Linux и требует
+только установки Python 3.x на вашем
+компьютере.</p>
+<p><b>Расширяемость:</b> Это приложение
+можно легко расширить, добавив
+дополнительные функции или языки. В
+настоящее время это только планируется
+и будет реализовано после анализа
+обратной связи.</p>
+<p><br/>
+<br/>
+
+</p>
+</body>
+</html>

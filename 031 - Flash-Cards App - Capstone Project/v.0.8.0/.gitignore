@@ -1,0 +1,17 @@
+Materials/
+old/
+__pycache__/
+side_programms/
+win_transfer/
+Hilfe-Datei platform├╝bergreifend zu organisieren.txt
+Day 031 - Flash-Cards App - Capstone Project
+data/old/
+modules/old/
+*.ods/
+.idea/
+_archive.keep/
+Materials/
+.idea/
+.ruff_cache/
+packets.txt
+filelist.txt

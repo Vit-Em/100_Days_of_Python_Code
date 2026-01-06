@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indexing>
+ <object alt="" name="Bild1" object_type="graphic"/>
+ <object alt="" name="Bild2" object_type="graphic"/>
+ <paragraph index="15" node_type="writer">Flashcards-Hilfe</paragraph>
+ <paragraph index="16" node_type="writer">Einführung</paragraph>
+ <paragraph index="17" node_type="writer">Willkommen zur Flashcard-Anwendung! Diese Anwendung hilft dir, deutsche Wörter und ihre russischen Übersetzungen zu lernen. Die App verwendet eine CSV-Datei mit häufigen deutschen Wörtern und deren Übersetzungen.</paragraph>
+ <paragraph index="18" node_type="writer">Benutzung</paragraph>
+ <paragraph index="19" node_type="writer">1. Starten der App: Öffne die App, um mit dem Lernen zu beginnen:</paragraph>
+ <paragraph index="20" node_type="writer">	In Console:		python Flash_Cards_main.py
+	Im Windos Explorer:	Flash_Cards_main.exe</paragraph>
+ <paragraph index="21" node_type="writer">2. Kartenanzeige: Die App zeigt dir eine Karte mit einem deutschen Wort und seiner Wortart auf der Vorderseite und (nach dem Umdrehen) einem russischen Wort und seiner Wortart auf der Rückseite.</paragraph>
+ <paragraph index="22" node_type="writer">❌-Knopf (Falsch): Wenn du das Wort nicht kennst, klicke auf diesen Knopf. Die Karte wird umgedreht und zeigt dir die russische Übersetzung. Der Zähler neben dem Knopf erhöht sich.</paragraph>
+ <paragraph index="23" node_type="writer">✅-Knopf (Richtig): Wenn du das Wort kennst, klicke auf diesen Knopf. Die App zeigt dir das nächste Wort. Der Zähler neben dem Knopf erhöht sich.</paragraph>
+ <paragraph index="24" node_type="writer">Timer: Der Timer zwischen den Knöpfen zeigt dir die verstrichene Zeit an, die du zum Überlegen benötigt hast.</paragraph>
+ <paragraph index="25" node_type="writer">Zähler: Die zwei Zähler neben den Knöpfen zeigen dir, wie oft du auf den jeweiligen Knopf geklickt hast (falsch oder richtig).</paragraph>
+ <paragraph index="26" node_type="writer">3. Übungsstatistik: Die App speichert deine Lernstatistik in einer CSV-Datei namens `achievements.csv`. Diese Datei enthält Informationen über Datum und Uhrzeit der Übung, die Übungsdauer,die Anzahl der richtigen bzw. falschen Antworten und deien Denkdauer bevor du ✅-Knopf (Richtig) drückts.</paragraph>
+ <paragraph index="27" node_type="writer">4. Hilfe Klicke auf den &quot;Hilfe / Справка&quot;-Link, um diese Hilfedatei zu öffnen.</paragraph>
+ <paragraph index="28" node_type="writer">Programmmerkmale</paragraph>
+ <paragraph index="29" node_type="writer">- Gewichtete Auswahl: Die App verwendet eine gewichtete Auswahl, um häufigere Wörter öfter anzuzeigen. Die Häufigkeit von Worten in lebendigen deutsche Sprache wurde vom Matthias Buchmeier in seinem “German frequency list-1-5000” im 25.06.2009 berechnet und im 11.02.2025 vom Vitali Emelianov mit den Wortarten und Übersetzung ergänzt.</paragraph>
+ <paragraph index="30" node_type="writer">- Plattformübergreifend: Diese App ist für Windows, macOS und Linux konzipiert und sieht nur Installtion von Python 3.X auf Ihrem PC vor.</paragraph>
+ <paragraph index="31" node_type="writer">- Erweiterbarkeit: Diese App kann leicht erweitert werden, um weitere Funktionen oder Sprachen hinzuzufügen. Es ist zurzeit nur geplant und wird nach der Feedbackanalyse ausgeführt.</paragraph>
+ <paragraph index="32" node_type="writer">Flashcards-Справка</paragraph>
+ <paragraph index="33" node_type="writer">Введение</paragraph>
+ <paragraph index="34" node_type="writer">Добро пожаловать в приложение Flashcards! Это приложение поможет вам изучать немецкие слова и их русские переводы. Приложение использует CSV-файл с часто используемыми немецкими словами и их переводами.</paragraph>
+ <paragraph index="35" node_type="writer">Использование</paragraph>
+ <paragraph index="36" node_type="writer">1. Запуск приложения: Откройте приложение, чтобы начать обучение.</paragraph>
+ <paragraph index="37" node_type="writer">	В терминале:	python Flash_Cards_main.py
+	В Windos Explorer:	Flash_Cards_main.exe</paragraph>
+ <paragraph index="38" node_type="writer">2. Отображение карточек: Приложение показывает вам карточку с немецким словом и его частью речи на лицевой стороне и русским словом с его частью речи на обратной стороне.</paragraph>
+ <paragraph index="39" node_type="writer">❌-Кнопка (Не знаю): Если вы не знаете слово, нажмите на эту кнопку. Карточка перевернется и покажет вам русский перевод.</paragraph>
+ <paragraph index="40" node_type="writer">✅-Кнопка (Знаю): Если вы знаете слово, нажмите на эту кнопку. Приложение покажет вам следующее слово.</paragraph>
+ <paragraph index="41" node_type="writer">Таймер: Таймер между кнопками показывает прошедшее время, которое вы потратили на размышление.</paragraph>
+ <paragraph index="42" node_type="writer">Счетчики: Два счетчика рядом с кнопками показывают, сколько раз вы нажимали на соответствующую кнопку (не знаю или знаю).</paragraph>
+ <paragraph index="43" node_type="writer">3. Статистика обучения: Приложение сохраняет вашу статистику обучения в CSV-файле под названием `achievements.csv`. Этот файл содержит информацию о дате и времени упражнения, продолжительности упражнения и количестве правильных и неправильных ответов.</paragraph>
+ <paragraph index="44" node_type="writer">4. Помощь: Нажмите на ссылку &quot;Hilfe / Справка&quot;, чтобы открыть этот файл справки.</paragraph>
+ <paragraph index="45" node_type="writer">Особенности программы</paragraph>
+ <paragraph index="46" node_type="writer">Взвешенный выбор: Приложение использует взвешенный выбор, чтобы чаще показывать более часто используемые немецкие слова. Частота слов в живом немецком языке была рассчитана Маттиасом Бухмайером в его &quot;German frequency list-1-5000&quot; 25.06.2009 и дополнена частями речи и переводами Виталием Емельяновым 11.02.2025.</paragraph>
+ <paragraph index="47" node_type="writer">Кроссплатформенность: Это приложение предназначено для Windows, macOS и Linux и требует только установки Python 3.x на вашем компьютере.</paragraph>
+ <paragraph index="48" node_type="writer">Расширяемость: Это приложение можно легко расширить, добавив дополнительные функции или языки. В настоящее время это только планируется и будет реализовано после анализа обратной связи.</paragraph>
+</indexing>
